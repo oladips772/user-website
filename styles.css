@@ -1,0 +1,109 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  background: indianred;
+}
+main {
+  background: white;
+  width: 420px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+main.inactive {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+.input_div {
+  margin-top: 20px;
+  display: none;
+  transform: all 0.3s ease;
+  transition-delay: 0.4s;
+}
+
+.input_div.active {
+  display: block;
+}
+
+.input_div input {
+  width: 100%;
+}
+.input_div .input_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 22px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 6px;
+}
+.input_container input {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 19px;
+}
+.input_container i {
+  color: gray;
+}
+button {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 33px;
+  background: indianred;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-left: 80px;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+.welcome_screen {
+  display: none;
+}
+
+.welcome_screen.active {
+  display: block;
+  width: 420px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.loginBtn.inactive {
+  display: none;
+}
+.verifyBtn {
+  display: none;
+}
+.verifyBtn.active {
+  display: block;
+}
+.welcome_screen h3 {
+  text-align: center;
+}
