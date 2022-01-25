@@ -107,3 +107,21 @@ button:hover {
 .welcome_screen h3 {
   text-align: center;
 }
+
+p{
+  color: red;
+}
+
+.email-error{
+  display:none;
+}
+.password-error{
+  display:none;
+}
+
+.email-error.active{
+  display:block;
+}
+.password-error.active{
+  display:block;
+}
